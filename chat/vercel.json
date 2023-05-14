@@ -1,6 +1,6 @@
 {
   "builds": [{
-    "src": "chat/asgi.py",
+    "src": "chat/wsgi.py",
     "use": "@vercel/python",
     "config": {
       "maxlambdaSize": "15mb",
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "chat/asgi.py"
+      "dest": "chat/wsgi.py"
     }
   ]
 }
